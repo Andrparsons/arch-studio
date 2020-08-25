@@ -10,6 +10,10 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Arch Studio</title>
@@ -19,26 +23,30 @@
       Home
     </div>
     <header>
-      <div class="container">
-        <nav class="nav">
-          <a href="./portfolio.html">
-            Portfolio
-          </a>
-          <a href="./about.html">
-            About Us
-          </a>
-          <a href="./contact.html">
-            Contact
-          </a>
-        </nav>
+      <a href="./index.html">
+        <img class="logo" src="./assets/logo.svg" alt="" />
+      </a>
+      <div class="menu-btn">
+        <img src="./assets/icons/icon-hamburger.svg" alt="" />
       </div>
+      <nav class="nav">
+        <a class="nav--link" href="./portfolio.html">
+          Portfolio
+        </a>
+        <a class="nav--link" href="./about.html">
+          About Us
+        </a>
+        <a class="nav--link" href="./contact.html">
+          Contact
+        </a>
+      </nav>
     </header>
 
     <main>
       <div class="hero">
-        <div class="container">
-          <div class="project">
-            <div class="project--container">
+        <div class="container-outer">
+          <div class="project project-paramour">
+            <div class="project--container container-inner">
               <h2 class="project--title">
                 Project Paramour
               </h2>
@@ -49,15 +57,39 @@
               <a href="./portfolio.html">
                 <button class="btn">
                   See Our Portfolio
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                    </g>
+                  </svg>
                 </button>
               </a>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project--container">
+          <div class="project project-seraph">
+            <div class="project--container container-inner">
               <h2 class="project--title">
                 Seraph Station
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#1B1D23"
+                    stroke-width="2"
+                  >
+                    <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                  </g>
+                </svg>
               </h2>
               <p class="project--text">
                 The Seraph Station project challenged us to design a unique
@@ -65,15 +97,29 @@
                 a fresh and futuristic model inspired by space stations.
               </p>
               <a href="./portfolio.html">
-                <button class="btn-dark">
+                <button class="btn">
                   See Our Portfolio
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                    </g>
+                  </svg>
                 </button>
               </a>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project--container">
+          <div class="project project-federal">
+            <div class="project--container container-inner">
               <h2 class="project--title">
                 Federal II Tower
               </h2>
@@ -85,17 +131,31 @@
               <a href="./portfolio.html">
                 <button class="btn">
                   See Our Portfolio
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                    </g>
+                  </svg>
                 </button>
               </a>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project--container">
+          <div class="project project-trinity">
+            <div class="project--container container-inner">
               <h2 class="project--title">
                 Trinity Bank Tower
               </h2>
-              <p class="project--title">
+              <p class="project--text">
                 Trinity Bank challenged us to make a concept for a 84 story
                 building located in the middle of a city with a high earthquake
                 frequency. For this project we used curves to blend design and
@@ -104,6 +164,20 @@
               <a href="./portfolio.html">
                 <button class="btn">
                   See Our Portfolio
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                    </g>
+                  </svg>
                 </button>
               </a>
             </div>
@@ -126,14 +200,14 @@
       </div>
 
       <div class="welcome">
-        <div class="container">
+        <div class="container-outer">
           <h1 class="welcome--title">
             Welcome
           </h1>
-          <div class="welcome--content">
-            <h2 class="welcome--subtitile">
+          <div class="welcome--content container-inner">
+            <h3 class="welcome--subtitile">
               Welcome to Arch Studio
-            </h2>
+            </h3>
             <p class="welcome--text">
               We have a unique network and skillset to help bring your projects
               to life. Our small team of highly skilled individuals combined
@@ -156,64 +230,103 @@
       </div>
 
       <div class="team">
-        <div class="container">
-          <h2 class="team--title">
-            Small team, big ideas
-          </h2>
-          <a href="./about.html">
-            <button class="btn">
-              About Us
-            </button>
-          </a>
+        <div class="container-outer">
+          <div class="container-inner">
+            <h3 class="team--title">
+              Small team, big ideas
+            </h3>
+            <a href="./about.html">
+              <button class="btn">
+                About Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#1B1D23"
+                    stroke-width="2"
+                  >
+                    <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                  </g>
+                </svg>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 
       <div class="featured">
-        <div class="container">
-          <h2 class="featured--title">
-            Featured
-          </h2>
-          <button class="btn">
-            See all
-          </button>
-
-          <a href="./portfolio.html">
-            <div class="featured--project">
-              <div class="featured--project-num">
-                1
-              </div>
-              <h3 class="featured--project-title">
-                Project Del Sol
-              </h3>
-              <p class="featured--project-cta">
-                View All Projects
-              </p>
-            </div>
-          </a>
-
-          <a href="./portfolio.html">
-            <div class="featured--project">
-              <div class="featured--project-num">
-                2
-              </div>
-              <h3 class="featured--project-title">
-                228B Tower
-              </h3>
-              <p class="featured--project-cta">
-                View All Projects
-              </p>
-            </div>
-          </a>
-          <div class="featured--project">
-            <div class="featured--project-num">
-              3
-            </div>
-            <h3 class="featured--project-title">
-              Le Prototype
+        <div class="container-outer">
+          <div class="featured-container">
+            <h3 class="featured--title">
+              Featured
             </h3>
-            <p class="featured--project-cta">
-              View All Projects
-            </p>
+            <button class="btn">
+              See all
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#1B1D23"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+                </g>
+              </svg>
+            </button>
+
+            <a class="featured--portfolio" href="./portfolio.html">
+              <div class="portfolio--project">
+                <img
+                  src="./assets/portfolio/mobile/image-del-sol.jpg"
+                  alt="Project Del Sol"
+                />
+                <div class="featured--project-num">
+                  1
+                </div>
+                <h4 class="portfolio--project-title">
+                  Project Del Sol
+                </h4>
+                <p class="portfolio--project-subtitle">
+                  View All Projects
+                </p>
+              </div>
+            </a>
+
+            <a class="featured--portfolio" href="./portfolio.html">
+              <div class="portfolio--project">
+                <img
+                  src="./assets/portfolio/mobile/image-228b.jpg"
+                  alt="228B Tower"
+                />
+                <div class="featured--project-num">
+                  2
+                </div>
+                <h4 class="portfolio--project-title">
+                  228B Tower
+                </h4>
+                <p class="portfolio--project-subtitle">
+                  View All Projects
+                </p>
+              </div>
+            </a>
+
+            <a class="featured--portfolio" href="./portfolio.html">
+              <div class="portfolio--project">
+                <img
+                  src="./assets/portfolio/mobile/image-prototype.jpg"
+                  alt="Le Prototype"
+                />
+                <div class="portfolio--project-num">
+                  3
+                </div>
+                <h4 class="portfolio--project-title">
+                  Le Prototype
+                </h4>
+                <p class="portfolio--project-subtitle">
+                  View All Projects
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -221,18 +334,31 @@
 
     <footer>
       <div class="container">
+        <div class="footer--logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
         <nav class="footer--nav">
-          <a href="./portfolio.html">
+          <a class="nav--link" href="./portfolio.html">
             Portfolio
           </a>
-          <a href="./about.html">
+          <a class="nav--link" href="./about.html">
             About Us
           </a>
-          <a href="./contact.html">
+          <a class="nav--link" href="./contact.html">
             Contact
           </a>
           <button class="btn">
             See Our Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#1B1D23"
+                stroke-width="2"
+              >
+                <path d="M15 1l9 9-9 9M0 10h24" class="icon-arrow" />
+              </g>
+            </svg>
           </button>
         </nav>
       </div>

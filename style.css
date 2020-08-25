@@ -1,0 +1,230 @@
+:root {
+  /* colours */
+  --veryDarkBlue: #1b1d23;
+  --darkGrey: #60636d;
+  --mediumGrey: #7d828f;
+  --lightGrey: #c8ccd8;
+  --veryLightGrey: #eeeff4;
+  --red: #df5656;
+  --white: #ffffff;
+
+  /* type */
+  --h1: 7.5rem;
+  --h2: 3rem;
+  --h3: 2.5rem;
+  --h4: 1.125rem;
+  --body-text: 0.9375rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  padding: 2rem;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: var(--body-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* headers */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+/* links */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav--link {
+  color: var(--mediumGrey);
+  font-weight: 700;
+}
+
+.nav--link:hover {
+  color: var(--veryDarkBlue);
+}
+
+.featured--portfolio {
+}
+
+/* buttons */
+
+.btn {
+  color: var(--white);
+  background-color: var(--veryDarkBlue);
+  border: none;
+  padding: 1.5em 2em;
+  cursor: pointer;
+  display: flex;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--darkGrey);
+}
+
+.btn:active {
+  background-color: var(--lightGrey);
+}
+
+.btn svg {
+  margin-left: 1.5rem;
+}
+
+.icon-arrow {
+  stroke: var(--white);
+}
+
+/* containers */
+
+.container-outer {
+  padding: 0;
+}
+
+.container-inner {
+  padding: 0 2rem;
+}
+
+.project--container {
+  padding-top: 6.875rem;
+  padding-bottom: 6.875rem;
+}
+
+/* sidebar */
+
+.sidebar {
+  display: none;
+}
+
+/* navigation */
+
+.nav {
+}
+
+/* hero */
+
+.project {
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+}
+
+.project--text {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.btn-group {
+  display: none;
+}
+
+.project-paramour {
+  background-image: url("./assets/home/mobile/image-hero-paramour.jpg");
+}
+
+.project-seraph {
+  background-image: url("./assets/home/mobile/image-hero-seraph.jpg");
+}
+
+.project-federal {
+  background-image: url("./assets/home/mobile/image-hero-federal.jpg");
+}
+
+.project-trinity {
+  background-image: url("./assets/home/mobile/image-hero-trinity.jpg");
+}
+
+@media (min-width: 600px) {
+  .project-paramour {
+    background-image: url("./assets/home/tablet/image-hero-paramour.jpg");
+  }
+
+  .project-seraph {
+    background-image: url("./assets/home/tablet/image-hero-seraph.jpg");
+  }
+
+  .project-federal {
+    background-image: url("./assets/home/tablet/image-hero-federal.jpg");
+  }
+
+  .project-trinity {
+    background-image: url("./assets/home/tablet/image-hero-trinity.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-paramour {
+    background-image: url("./assets/home/desktop/image-hero-paramour.jpg");
+  }
+
+  .project-seraph {
+    background-image: url("./assets/home/desktop/image-hero-seraph.jpg");
+  }
+
+  .project-federal {
+    background-image: url("./assets/home/desktop/image-hero-federal.jpg");
+  }
+
+  .project-trinity {
+    background-image: url("./assets/home/desktop/image-hero-trinity.jpg");
+  }
+}
+
+/* welcome */
+.welcome--title {
+  color: var(--veryLightGrey);
+}
+
+/* featured section */
+
+.featured-container {
+  display: grid;
+}
+
+.portfolio--project {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: var(--white);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.01%,
+    rgba(0, 0, 0, 0.499044) 100%
+  );
+}
