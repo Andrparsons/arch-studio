@@ -16,18 +16,20 @@
     />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Arch Studio</title>
+    <title>Arch Studio | Home</title>
   </head>
   <body>
     <div class="sidebar">
       Home
     </div>
     <header>
-      <a href="./index.html">
-        <img class="logo" src="./assets/logo.svg" alt="" />
-      </a>
-      <div class="menu-btn">
-        <img src="./assets/icons/icon-hamburger.svg" alt="" />
+      <div class="nav-group">
+        <a href="./index.html">
+          <img class="logo" src="./assets/logo.svg" alt="" />
+        </a>
+        <button class="menu-btn">
+          <img src="./assets/icons/icon-hamburger.svg" alt="" />
+        </button>
       </div>
       <nav class="nav">
         <a class="nav--link" href="./portfolio.html">
@@ -43,6 +45,7 @@
     </header>
 
     <main>
+      <div class="modal"></div>
       <div class="hero">
         <div class="container-outer">
           <div class="project project-paramour">
@@ -201,7 +204,7 @@
 
       <div class="welcome">
         <div class="container-outer">
-          <h1 class="welcome--title">
+          <h1 class="page--title">
             Welcome
           </h1>
           <div class="welcome--content container-inner">
@@ -363,5 +366,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
