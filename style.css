@@ -60,6 +60,9 @@ h2 {
 
 h3 {
   font-size: var(--h3);
+  line-height: 1.2;
+  letter-spacing: -1.43px;
+  font-weight: 700;
 }
 
 h4 {
@@ -68,6 +71,15 @@ h4 {
 
 .page--title {
   color: var(--veryLightGrey);
+}
+
+.page--subtitle {
+  color: var(--veryDarkBlue);
+}
+
+p {
+  color: var(--darkGrey);
+  line-height: 1.67;
 }
 
 /* links */
@@ -108,6 +120,7 @@ a {
   padding: 1.5em 2em;
   cursor: pointer;
   display: flex;
+  line-height: 1.67;
 }
 
 .btn:hover,
@@ -157,6 +170,10 @@ a {
 .nav-group {
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  width: 4.85rem;
 }
 
 .nav {
@@ -212,7 +229,16 @@ main {
   background-blend-mode: overlay;
 }
 
+.project--title {
+  letter-spacing: -1.2px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .project--text {
+  margin-top: 1em;
+  margin-bottom: 3.8em;
+  color: var(--white);
 }
 
 .btn-group {
@@ -288,3 +314,5 @@ main {
     rgba(0, 0, 0, 0.499044) 100%
   );
 }
+
+/* welcome */
