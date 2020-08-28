@@ -43,7 +43,23 @@ img {
   height: auto;
 }
 
-/* headers */
+@media (min-width: 600px) {
+  header {
+    padding: 3.5rem 6.125rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    padding: 3.5rem 0;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+/* typography */
 h1,
 h2,
 h3,
@@ -106,6 +122,7 @@ a {
 @media (min-width: 600px) {
   .nav--link {
     color: var(--mediumGrey);
+    margin-top: 0;
   }
 }
 
@@ -146,6 +163,12 @@ a {
   stroke: var(--white);
 }
 
+@media (min-width: 600px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
 /* containers */
 
 .container-outer {
@@ -160,20 +183,35 @@ a {
   padding-top: 6.875rem;
   padding-bottom: 6.875rem;
 }
+
+@media (min-width: 600px) {
+  .container-outer {
+    padding: 0 6.125rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container-outer {
+    max-width: 1110px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 /* sidebar */
 
 .sidebar {
   display: none;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .sidebar {
-    display: initial;
+    display: block;
     position: sticky;
     writing-mode: vertical-rl;
-    top: 0;
+    top: 1rem;
   }
-}
+} */
 
 /* navigation */
 
@@ -227,6 +265,30 @@ main {
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    max-width: 97px;
+  }
+
+  .nav {
+    transform: none;
+    flex-direction: row;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: var(--body-text);
+    margin-left: 4.875rem;
+    justify-content: space-between;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    margin-left: 5.875rem;
+  }
 }
 
 /* hero */
