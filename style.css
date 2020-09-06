@@ -135,7 +135,7 @@ a {
   color: var(--white);
   background-color: var(--veryDarkBlue);
   border: none;
-  padding: 1.5em 2em;
+  padding: 1.5rem 2rem;
   cursor: pointer;
   display: flex;
   line-height: 1.67;
@@ -388,3 +388,45 @@ main {
 }
 
 /* welcome */
+
+/* footer */
+
+footer {
+  background-color: var(--veryLightGrey);
+}
+
+.footer--container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer--logo {
+  padding: 3rem 2rem;
+  width: 3.625rem;
+  box-sizing: content-box;
+}
+
+.footer--nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -1.75rem;
+  position: relative;
+}
+
+.footer--nav .nav--link {
+  color: var(--mediumGrey);
+}
+
+.footer--nav .btn {
+  margin-top: 2rem;
+}
+
+.footer--logo {
+  background-color: var(--veryDarkBlue);
+  color: var(--white);
+  position: relative;
+  top: -3.75rem;
+}
