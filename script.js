@@ -14,3 +14,14 @@ menuBtn.addEventListener("click", () => {
     isOpen = !isOpen;
   }
 });
+
+//swiper slides
+
+let swiper = new Swiper(".swiper-container", {
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});

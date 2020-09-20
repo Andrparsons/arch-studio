@@ -297,8 +297,9 @@ main {
   color: var(--white);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
+  height: 560px;
 }
 
 .project--title {
@@ -395,7 +396,9 @@ footer {
   background-color: var(--veryLightGrey);
 }
 
-.footer--container {
+.footer--container,
+.footer--nav,
+.footer--nav-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -409,11 +412,7 @@ footer {
 }
 
 .footer--nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   top: -1.75rem;
-  position: relative;
 }
 
 .footer--nav .nav--link {
@@ -429,4 +428,29 @@ footer {
   color: var(--white);
   position: relative;
   top: -3.75rem;
+}
+
+@media (min-width: 600px) {
+  .footer--container,
+  .footer--nav,
+  .footer--nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer--logo,
+  .footer--nav {
+    top: 0;
+  }
+
+  .footer--nav-container {
+    margin: 0 2.5rem;
+    flex-direction: row;
+  }
+
+  .footer--nav .btn {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
 }
